@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>facebok&amp; amazon</td>
+            <td>16 Dec 2024, 11:59</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">AmazonDifine.browserCloseAmazon()</td>
+              <td>1</td>
+              <td class="duration" data-value="84000">0.000</td>
+              <td class="duration" data-value="84000">0.000</td>
+              <td class="duration" data-value="84000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.clickAContinueBtn()</td>
+              <td>1</td>
+              <td class="duration" data-value="37100">0.000</td>
+              <td class="duration" data-value="37100">0.000</td>
+              <td class="duration" data-value="37100">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.clickSigninBtn()</td>
+              <td>1</td>
+              <td class="duration" data-value="74600">0.000</td>
+              <td class="duration" data-value="74600">0.000</td>
+              <td class="duration" data-value="74600">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.closeTheBrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8000">0.000</td>
+              <td class="duration" data-value="8000">0.000</td>
+              <td class="duration" data-value="8000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.passTheValueInEmailIdOrPhnumInEmailfield()</td>
+              <td>1</td>
+              <td class="duration" data-value="17919600">0.017</td>
+              <td class="duration" data-value="17919600">0.017</td>
+              <td class="duration" data-value="17919600">0.017</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.passTheValueInPasswordfield()</td>
+              <td>1</td>
+              <td class="duration" data-value="65300">0.000</td>
+              <td class="duration" data-value="65300">0.000</td>
+              <td class="duration" data-value="65300">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.toClickAContinueBtn()</td>
+              <td>1</td>
+              <td class="duration" data-value="14500">0.000</td>
+              <td class="duration" data-value="14500">0.000</td>
+              <td class="duration" data-value="14500">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.toClickSigninBtn()</td>
+              <td>1</td>
+              <td class="duration" data-value="10200">0.000</td>
+              <td class="duration" data-value="10200">0.000</td>
+              <td class="duration" data-value="10200">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.toLaunchTheBrowser()</td>
+              <td>2</td>
+              <td class="duration" data-value="8285495700">8.285</td>
+              <td class="duration" data-value="8285495700">8.735</td>
+              <td class="duration" data-value="16570991400">16.570</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.toPassTheValueInEmailIdOrPhnumInEmailfield()</td>
+              <td>1</td>
+              <td class="duration" data-value="180552500">0.180</td>
+              <td class="duration" data-value="180552500">0.180</td>
+              <td class="duration" data-value="180552500">0.180</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AmazonDifine.toPassTheValueInPasswordfield()</td>
+              <td>1</td>
+              <td class="duration" data-value="11000">0.000</td>
+              <td class="duration" data-value="11000">0.000</td>
+              <td class="duration" data-value="11000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FBdifine.to_click_the_login_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="252400">0.000</td>
+              <td class="duration" data-value="252400">0.000</td>
+              <td class="duration" data-value="252400">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FBdifine.to_close_the_chrome_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="40100">0.000</td>
+              <td class="duration" data-value="40100">0.000</td>
+              <td class="duration" data-value="40100">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FBdifine.to_launch_the_chrome_browser_and_hit_the_url()</td>
+              <td>5</td>
+              <td class="duration" data-value="9356431300">9.356</td>
+              <td class="duration" data-value="9356431300">10.860</td>
+              <td class="duration" data-value="46782156500">46.782</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FBdifine.to_pass_the_invalid_mailId_in_emailfield(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="695276200">0.695</td>
+              <td class="duration" data-value="695276200">0.695</td>
+              <td class="duration" data-value="695276200">0.695</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FBdifine.to_pass_the_valid_password_in_passwordfield(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="380584900">0.380</td>
+              <td class="duration" data-value="380584900">0.380</td>
+              <td class="duration" data-value="380584900">0.380</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.afHooks1(Scenario)</td>
+              <td>7</td>
+              <td class="duration" data-value="223740085">0.223</td>
+              <td class="duration" data-value="223740085">0.250</td>
+              <td class="duration" data-value="1566180600">1.566</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.afHooks2()</td>
+              <td>7</td>
+              <td class="duration" data-value="1065505628">1.065</td>
+              <td class="duration" data-value="1065505628">1.714</td>
+              <td class="duration" data-value="7458539400">7.458</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.bfHooks2()</td>
+              <td>7</td>
+              <td class="duration" data-value="3843354028">3.843</td>
+              <td class="duration" data-value="3843354028">5.287</td>
+              <td class="duration" data-value="26903478200">26.903</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.bfHooks3()</td>
+              <td>7</td>
+              <td class="duration" data-value="420380828">0.420</td>
+              <td class="duration" data-value="420380828">0.482</td>
+              <td class="duration" data-value="2942665800">2.942</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NagativeAndPositiveTest.click_the_login_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="21675">0.000</td>
+              <td class="duration" data-value="21675">0.000</td>
+              <td class="duration" data-value="86700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NagativeAndPositiveTest.close_the_chrome_browser()</td>
+              <td>4</td>
+              <td class="duration" data-value="9175">0.000</td>
+              <td class="duration" data-value="9175">0.000</td>
+              <td class="duration" data-value="36700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NagativeAndPositiveTest.pass_the_invalid_mailId_in_emailfield(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="703911400">0.703</td>
+              <td class="duration" data-value="703911400">1.306</td>
+              <td class="duration" data-value="2815645600">2.815</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="2712750">0.002</td>
+              <td class="duration" data-value="2712750">0.009</td>
+              <td class="duration" data-value="10851000">0.010</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>24</td>
+            <td>65</td>
+            <td class="duration">1.635</td>
+            <td class="duration">46.782</td>
+            <td class="duration">1:46.325</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

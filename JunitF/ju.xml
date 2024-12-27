@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="6" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="106.339651">
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate invalid emailId and valid password" time="16.078835">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When To pass the invalid mailId in emailfield...............................passed
+And To pass the valid password in passwordfield.............................passed
+And To click the login button...............................................passed
+Then To close the chrome browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate invalid emailId and invalid password" time="13.899736">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)&#13;&#10;&#9;at ✽.Pass the invalid password &quot;java&quot; in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)&#13;&#10;">
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When Pass the invalid mailId "java123@gmail.com" in emailfield..............passed
+And Pass the invalid password "java" in passwordfield.......................failed
+And Click the login button..................................................skipped
+Then Close the chrome browser...............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)
+	at ✽.Pass the invalid password "java" in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate invalid emailId and invalid password 2" time="16.710576">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)&#13;&#10;&#9;at ✽.Pass the invalid password &quot;selenium&quot; in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)&#13;&#10;">
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When Pass the invalid mailId "selenium123@gmail.cim" in emailfield..........passed
+And Pass the invalid password "selenium" in passwordfield...................failed
+And Click the login button..................................................skipped
+Then Close the chrome browser...............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)
+	at ✽.Pass the invalid password "selenium" in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate invalid emailId and invalid password 3" time="17.015073">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)&#13;&#10;&#9;at ✽.Pass the invalid password &quot;framework&quot; in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)&#13;&#10;">
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When Pass the invalid mailId "framework123@gmail.com" in emailfield.........passed
+And Pass the invalid password "framework" in passwordfield..................failed
+And Click the login button..................................................skipped
+Then Close the chrome browser...............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)
+	at ✽.Pass the invalid password "framework" in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate Login functionality of Facebook application" name="To validate invalid emailId and invalid password 4" time="15.41448">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)&#13;&#10;&#9;at ✽.Pass the invalid password &quot;sql&quot; in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)&#13;&#10;">
+            <![CDATA[Given To launch the chrome browser and hit the url..........................passed
+When Pass the invalid mailId "sql123@gmail.com" in emailfield...............passed
+And Pass the invalid password "sql" in passwordfield........................failed
+And Click the login button..................................................skipped
+Then Close the chrome browser...............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdifinition.NagativeAndPositiveTest.pass_the_invalid_password_in_passwordfield(NagativeAndPositiveTest.java:35)
+	at ✽.Pass the invalid password "sql" in passwordfield(src/test/resources/FeatureFile/01fb.feature:29)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate Login functionality of amazon application" name="To validate login by using nagative username and pasitive password" time="14.554305">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name='email']&quot;}&#10;  (Session info: chrome=131.0.6778.140)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.26.0', revision: '8ccf0219d7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4408bde1427d9a5e0ced16acec35c12a, findElement {using=name, value=email}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60661/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4408bde1427d9a5e0ced16acec35c12a&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)&#13;&#10;&#9;at org.libglobal.BaseClass.sendData(BaseClass.java:71)&#13;&#10;&#9;at org.stepdifinition.AmazonDifine.toPassTheValueInEmailIdOrPhnumInEmailfield(AmazonDifine.java:26)&#13;&#10;&#9;at ✽.To pass the value in emailId or phnum in emailfield(src/test/resources/FeatureFile/02amazon.feature:9)&#13;&#10;">
+            <![CDATA[Given To launch the browser.................................................passed
+When To pass the value in emailId or phnum in emailfield....................failed
+And To click a continue btn.................................................skipped
+And To pass the value in passwordfield......................................skipped
+And To click signin  btn....................................................skipped
+Then Close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4408bde1427d9a5e0ced16acec35c12a, findElement {using=name, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60661/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4408bde1427d9a5e0ced16acec35c12a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+	at org.libglobal.BaseClass.sendData(BaseClass.java:71)
+	at org.stepdifinition.AmazonDifine.toPassTheValueInEmailIdOrPhnumInEmailfield(AmazonDifine.java:26)
+	at ✽.To pass the value in emailId or phnum in emailfield(src/test/resources/FeatureFile/02amazon.feature:9)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate Login functionality of amazon application" name="To validate login by using valied username and invalied password" time="12.666646">
+        <failure message="org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.26.0', revision: '8ccf0219d7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {using=name, value=email}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60661/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)&#13;&#10;&#9;at org.libglobal.BaseClass.sendData(BaseClass.java:71)&#13;&#10;&#9;at org.stepdifinition.AmazonDifine.passTheValueInEmailIdOrPhnumInEmailfield(AmazonDifine.java:65)&#13;&#10;&#9;at ✽.pass the value in emailId or phnum in emailfield(src/test/resources/FeatureFile/02amazon.feature:17)&#13;&#10;">
+            <![CDATA[Given To launch the browser.................................................passed
+When pass the value in emailId or phnum in emailfield.......................failed
+And click a continue btn....................................................skipped
+And pass the value in passwordfield.........................................skipped
+And click signin  btn.......................................................skipped
+Then browser close Amazon...................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=name, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60661/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+	at org.libglobal.BaseClass.sendData(BaseClass.java:71)
+	at org.stepdifinition.AmazonDifine.passTheValueInEmailIdOrPhnumInEmailfield(AmazonDifine.java:65)
+	at ✽.pass the value in emailId or phnum in emailfield(src/test/resources/FeatureFile/02amazon.feature:17)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
